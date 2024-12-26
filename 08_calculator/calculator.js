@@ -7,15 +7,11 @@ const subtract = function (x, y) {
 };
 
 const sum = function (nums) {
-    let total = 0;
-    nums.forEach((num) => (total += num));
-    return total;
+    return nums.reduce((acc, current) => acc + current, 0);
 };
 
 const multiply = function (nums) {
-    let product = 1;
-    nums.forEach((num) => (product *= num));
-    return product;
+    return nums.reduce((acc, current) => acc * current, 1);
 };
 
 const power = function (x, y) {
